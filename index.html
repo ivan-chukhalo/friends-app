@@ -12,7 +12,6 @@
     <aside class="aside" id="aside">
         <div class="filters-n-sorters">
             <div class="sorters fns-section">
-                <h3 class="sorters__header">Sort</h3>
                 <div class="sorters__sub-section">
                     <span class="sorters__title">By age:</span>
                     <div class="sorters__buttons">
@@ -37,17 +36,35 @@
                 </div>
             </div>
             <div class="sorters fns-section">
-                <h3 class="sorters__header">Filter by age</h3>
-                <input type="number" class="input_age input"  id="input_filter-by-age" min="1" max="120" >
+                <input type="number" class="input_age input"  id="input_filter-by-age" min="1" max="120">
+                <button class="btn-filter">Filter by age</button>
             </div>
             <div class="sorters fns-section">
-                <h3 class="sorters__header">Filter by name</h3>
                 <input type="text" class="input_name input"  id="input_filter-by-name" maxlength="25">
+                <button class="btn-filter">Name</button>
             </div>
+            <div class="sorters fns-section">
+                <div class="sex-options">
+                    <span class="sex-option">
+                        <input type="radio" class="input-sex" id="sex-mail" name="sex">
+                        <label for="sex-mail">Mail</label>
+                    </span>
+                    <span class="sex-option">
+                        <input type="radio" class="input-sex" id="sex-femail" name="sex">
+                        <label for="sex-femail">Femail</label>
+                    </span>
+                    <span class="sex-option">
+                        <input type="radio" class="input-sex" id="sex-all" name="sex">
+                        <label for="sex-all">All</label>
+                    </span>
+                </div>
+                <button class="btn-filter">Filter by sex</button>
+            </div>
+            <button class="btn-filter">Reset</button>
         </div>
     </aside>
     <main class="main" id="main">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quos dolore laudantium explicabo nam. Sint ex est impedit reprehenderit eaque?
+        Loading...
     </main>
     <script src="./app.js"></script>
 </body>

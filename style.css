@@ -18,6 +18,7 @@ body{
     grid-area: header;
     background-color: #999;
     text-align: center;
+    line-height: 100px;
 }
 
 /* ASIDE */
@@ -28,8 +29,9 @@ body{
 }
 
 .fns-section{
-    padding-bottom: 10px;
-    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
 }
 
 /* ----------------------SORTING START---------------------- */
@@ -80,33 +82,24 @@ body{
 /* ----------------------FILTER BY AGE START---------------------- */
 .input{
     width: 100%;
+    margin-bottom: 5px;
+}
+
+.btn-filter{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
 }
 /* ----------------------FILTER BY AGE END---------------------- */
 
+.sex-options{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sex-option{
+}
 
 
 
@@ -114,4 +107,8 @@ body{
 .main{
     grid-area: main;
     background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
