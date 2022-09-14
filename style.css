@@ -5,3 +5,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "header header" "aside main";
+}
+
+.header{
+    grid-area: header;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.main{
+    grid-area: main;
+}
