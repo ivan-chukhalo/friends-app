@@ -11,18 +11,43 @@
     <h1 class="header" id="header">Frineds App</h1>
     <aside class="aside" id="aside">
         <div class="filters-n-sorters">
-            <div class="sorters">
-                <span class="sorters__title">By age</span>
-                <img src="#" alt="#" class="sorters__ascending">
-                <img src="#" alt="#" class="sorters__descending ">
-                <span class="sorters__title">By name</span>
-                <img src="#" alt="#" class="sorters__A-to-Z">
-                <img src="#" alt="#" class="sorters__Z-to-A">
+            <div class="sorters fns-section">
+                <h3 class="sorters__header">Sort</h3>
+                <div class="sorters__sub-section">
+                    <span class="sorters__title">By age:</span>
+                    <div class="sorters__buttons">
+                        <button class="sorters__button">
+                            <img src="./assets/svg/sort.svg" alt="#" class="sorters__icon sorters__icon_ascending">
+                        </button>
+                        <button class="sorters__button">
+                            <img src="./assets/svg/sort.svg" alt="#" class="sorters__icon sorters__icon_descending">
+                        </button>
+                    </div>
+                </div>
+                <div class="sorters__sub-section">
+                    <span class="sorters__title">By name:</span>
+                    <div class="sorters__buttons">
+                        <button class="sorters__button">
+                            <img src="./assets/svg/sort-by-alpha.svg" alt="#" class="sorters__icon sorters__icon_A-Z">
+                        </button>
+                        <button class="sorters__button">
+                            <img src="./assets/svg/sort-by-alpha-reverse.svg" alt="#" class="sorters__icon sorters__icon_Z-A">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="sorters fns-section">
+                <h3 class="sorters__header">Filter by age</h3>
+                <input type="number" class="input_age input"  id="input_filter-by-age" min="1" max="120" >
+            </div>
+            <div class="sorters fns-section">
+                <h3 class="sorters__header">Filter by name</h3>
+                <input type="text" class="input_name input"  id="input_filter-by-name" maxlength="25">
             </div>
         </div>
     </aside>
     <main class="main" id="main">
-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quos dolore laudantium explicabo nam. Sint ex est impedit reprehenderit eaque?
     </main>
     <script src="./app.js"></script>
 </body>

@@ -13,14 +13,105 @@ body{
     grid-template-areas: "header header" "aside main";
 }
 
+/* HEADER */
 .header{
     grid-area: header;
+    background-color: #999;
+    text-align: center;
 }
 
+/* ASIDE */
 .aside{
     grid-area: aside;
+    background-color: #aaa;
+    padding: 20px 10px;
 }
 
+.fns-section{
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+/* ----------------------SORTING START---------------------- */
+
+.sorters__sub-section{
+    display: flex;
+    justify-content: right;
+    width: 60%;
+    align-items: center;
+}
+
+.sorters__header{
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.sorters__title{
+    margin-right: 20px;
+}
+
+.sorters__buttons{
+}
+
+.sorters__button{
+    /* border: none; */
+    /* background: none; */
+}
+
+.sorters__icon{
+    width: 25px;
+}
+
+.sorters__icon_ascending{
+    transform: rotate(180deg) rotateY(180deg);
+}
+
+.sorters__icon_descending{
+}
+
+.sorters__icon_A-Z{
+}
+
+.sorters__icon_Z-A{
+}
+/* ----------------------SORTING END---------------------- */
+/* ----------------------FILTER BY AGE START---------------------- */
+.input{
+    width: 100%;
+}
+/* ----------------------FILTER BY AGE END---------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
 .main{
     grid-area: main;
+    background-color: #bbb;
 }
