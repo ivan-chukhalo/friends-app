@@ -108,7 +108,27 @@ body{
     grid-area: main;
     background-color: #bbb;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
+
+.card{
+    /* height: 150px; */
+    width: calc(25% - 20px);
+    margin: 10px;
+    border: 1px red solid;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.card__photo{
+    
+}
+
+.card__info{
+}
+
+.info__component{
+}
+
+
+
