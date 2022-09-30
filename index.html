@@ -15,10 +15,10 @@
                 <div class="sorters__sub-section">
                     <span class="sorters__title">By age:</span>
                     <div class="sorters__buttons">
-                        <button class="sorters__button">
+                        <button id="btn__sort_age__ascending" class="sorters__button">
                             <img src="./assets/svg/sort.svg" alt="#" class="sorters__icon sorters__icon_ascending">
                         </button>
-                        <button class="sorters__button">
+                        <button id="btn__sort_age__descending" class="sorters__button">
                             <img src="./assets/svg/sort.svg" alt="#" class="sorters__icon sorters__icon_descending">
                         </button>
                     </div>
@@ -26,28 +26,28 @@
                 <div class="sorters__sub-section">
                     <span class="sorters__title">By name:</span>
                     <div class="sorters__buttons">
-                        <button class="sorters__button">
+                        <button id="btn__sort_name__alphabetical" class="sorters__button">
                             <img src="./assets/svg/sort-by-alpha.svg" alt="#" class="sorters__icon sorters__icon_A-Z">
                         </button>
-                        <button class="sorters__button">
+                        <button id="btn__sort_name__alphabetical_reverse" class="sorters__button">
                             <img src="./assets/svg/sort-by-alpha-reverse.svg" alt="#" class="sorters__icon sorters__icon_Z-A">
                         </button>
                     </div>
                 </div>
             </div>
             <div class="sorters fns-section">
-                <input type="number" class="input_age input"  id="input_filter-by-age" min="1" max="120">
-                <button class="btn-filter">Filter by age</button>
+                <input type="number" class="input_age input"  id="input_filter-by-age" min="18" max="100">
+                <button class="btn-filter" id="btn__filter_by_age">Filter by age</button>
             </div>
             <div class="sorters fns-section">
                 <input type="text" class="input_name input"  id="input_filter-by-name" maxlength="25">
-                <button class="btn-filter">Name</button>
+                <button id="btn__filter_by_name" class="btn-filter">Name</button>
             </div>
             <div class="sorters fns-section">
                 <div class="sex-options">
                     <span class="sex-option">
                         <input type="radio" class="input-sex" id="sex-male" name="sex">
-                        <label for="sex-mail">Male</label>
+                        <label for="sex-male">Male</label>
                     </span>
                     <span class="sex-option">
                         <input type="radio" class="input-sex" id="sex-female" name="sex">
@@ -58,121 +58,13 @@
                         <label for="sex-all">All</label>
                     </span>
                 </div>
-                <button class="btn-filter">Filter by sex</button>
+                <button class="btn-filter" id="btn__filter_by_sex">Filter by sex</button>
             </div>
-            <button class="btn-filter">Reset</button>
+            <button class="btn-filter" id="btn_new_query">New query</button>
         </div>
     </aside>
     <main class="main" id="main">
         <!-- Loading... -->
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
-        <div class="card">
-            <img class="card__photo" src="#" alt="There is somoone in the photo">
-            <p class="card__info">
-                <span class="info__component">Ivan</span>
-                <span class="info__component">Chukhalo</span>
-            <p>
-            <p class="card__info">
-                <span class="info__component">21</span>
-                <span class="info__component">Male</span>
-            </p>
-            <p class="card__info">(044) 0414 2666</p>
-        </div>
     </main>
     <script src="./app.js"></script>
 </body>
