@@ -11,28 +11,22 @@ class User {
     createCardElement(){
         const CARD = document.createElement('div');
         CARD.setAttribute('class', 'card');
-        // photo
         const CARD_PHOTO = document.createElement('img');
         CARD_PHOTO.src = this.photo;
         CARD_PHOTO.setAttribute('alt', `There is ${this.firstName} ${this.lastName} in the picture`);
         CARD_PHOTO.className = 'card__photo';
-        // name
         const CARD_NAME = document.createElement('p');
         CARD_NAME.className = 'card__info';
         CARD_NAME.innerText = `${this.firstName} ${this.lastName}`;
-        // age
         const AGE_SECTION = document.createElement('p');
         AGE_SECTION.className = 'card__info';
         AGE_SECTION.innerText = `${this.age} years old`;
-        // sex
         const SEX_SECTION = document.createElement('p');
         SEX_SECTION.className = 'card__info';
-        SEX_SECTION.innerText = this.sex;
-        // phone 
+        SEX_SECTION.innerText = this.sex[0].toUpperCase() + this.sex.substring(1);
         const CARD_PHONE = document.createElement('p');
         CARD_PHONE.className = 'card__info';
         CARD_PHONE.innerText = this.phone;
-        // appending element into card
         CARD.appendChild(CARD_PHOTO)
         CARD.appendChild(CARD_NAME);
         CARD.appendChild(AGE_SECTION);
